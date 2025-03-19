@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 태그</title>
+</head>
+<body>
+    <h1>이미지 태그</h1>
+    <p>홈페이지에서 이미지를 보여줄 때 사용하는 태그</p>
+    <img src="./img/cat.jpg" alt="고양이 사진">
+    <p>src속성은 이미지파일까지의 경로를 입력하면 된다</p>
+    <p>alt속성은 이미지를 설명하는 대체 텍스트를 입력하면 된다</p>
+    <p>이미지태그는 src속성과 alt속성 두개는 필수적으로 사용해야 웹표준을 준수할 수 있다</p>
+    <hr>
+    <h1>특징</h1>
+    <p>이미지태그는 jpg,png,gif,svg 파일 등 브라우저에서 열 수 있는 파일들을 연결할 수 있다.</p>
+    <p>이미지 태그는 문맥의 뜻이 없다. 글자와 같은 컨텐츠이다.</p>
+    <p>이미지 태그는 글자처럼 배치된다.</p>
+
+    <p style="font-size:100px;"><img style="height:100px;" src="./img/cat.jpg" alt="고양이">는 매우 귀엽다 내가 키우는 <img style="height:100px;" src="./img/cat.jpg" alt="고양이">는 아주 애교가 많고 사랑스럽다.</p>
+
+    <p>이미지 태그는 이미지 용량이 너무 크면 홈페이지에 부담이 된다. 그래서 홈페이지가 열리는 속도가 느려진다.</p>
+
+    <h1>반응형 이미지 설정</h1>
+    <p>반응형이란 홈페이지 사용자의 접속기기의 너비에 반응하여 이미지를 보여주는 방법</p>
+    <img src="./img/dog_640.jpg" alt="강아지가 뛰는 사진"
+    srcset="./img/dog_640.jpg 640w, ./img/dog_1280.jpg 1280w, ./img/dog_1920.jpg 1920w"
+    sizes="(max-width:640px) 640px,
+           (max-width:1400px) 1280px,
+           1920px">
+
+    
+
+
+</body>
+</html>
