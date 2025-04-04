@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 언어 css</title>
+    <style>
+        /* css문법만 사용 가능한 공간 */
+        p {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+            font-size: 56px;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <h1>css</h1>
+    <p>html태그를 꾸며주는 언어</p>
+    
+    <h2>스타일 적용 방법</h2>
+    <p>태그를 꾸며주는 방법으로는 3가지가 있다.</p>
+    <ul>
+        <li style="color:red;">인라인스타일(inline-style) 방식 - 시작태그에 style속성을 사용하는 방식 (단점:일괄 스타일 적용이 불가능하다.)</li>
+        <li>내부 스타일시트 방식 - style태그를 사용하여 스타일을 입력하는 방식(단점:모든 페이지에 일괄 스타일 적용이 어렵다.)</li>
+        <li>외부 스타일시트 방식 - css파일을 연결하는 방식</li>
+    </ul>
+
+    <h2>내부스타일시트의 단점</h2>
+    <p>html파일 안에 스타일코드가 방대하게 들어가게 되면 수정보완하는데 있어서 불편하다.</p>
+    <p>스타일코드가 html파일 안에있기 때문에 동시에 여러 html페이지의 스타일 수정이 불가능하다.</p>
+    
+    <hr>
+
+    <h2>인라인스타일방식의 단점</h2>
+    <p>내부스타일시트방식의 단점 처럼 여러페이지 동시 수정이 불가능하다.</p>
+    <p>시작태그에 style 이라는 속성을 사용하여 스타일을 입력하는 방식이기 때문에 태그의 가독성이 좋지 않다.</p>
+
+    <hr>
+
+    <h2>외부스타일시트의 단점</h2>
+    <p>없음</p>
+</body>
+</html>

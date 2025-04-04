@@ -1,0 +1,9 @@
+p{color:red!important;}
+p.a#b{color:red;}
+p#b{color:blue;}
+#b{color:red;}
+body p.a{color:green;}
+p.a{color:blue;}
+.a{color:red;}
+p{color:red;color:blue;}
+p{color:green;}

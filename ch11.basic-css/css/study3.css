@@ -1,0 +1,52 @@
+body{
+    margin-bottom: 500px;
+}
+.a>h1{
+    /* div태그들의 자식 중에서 h1태그들을 선택한다. */
+    color:red;
+}
+.b h1{
+    color:blue;
+}
+.c>h1~p{
+    color:red;
+}
+.d ul li:nth-of-type(2n+1){
+    /* 
+    2n (짝수)
+    2n+1 (홀수)
+    수식을 입력할 수 있다.
+    */
+    color:blue;
+}
+
+.e a[target="_blank"]{
+    color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

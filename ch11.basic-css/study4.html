@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자의 우선순위 점수</title>
+    <link rel="stylesheet" href="./css/study4.css">
+</head>
+<body>
+    <h1>선택자의 우선순위 점수</h1>
+    <p style="color:black;" class="a" id="b">css는 선택자 부분의 표현 특이점이 높을수록 우선순위가 높게 적용된다.</p>
+    <p>이 우선순위점수가 높을수록 최종 반영된다.</p>
+    <p>기본적으로 css는 위에서 아래 왼쪽에서 오른쪽으로 해석되기 때문에 나중에 쓴 스타일이 최종 반영된다.</p>
+    <ul>
+        <li>태그명으로 선택 - 1점 자릿수 증가</li>
+        <li>클래스명으로 선택 - 10점 자릿수 증가</li>
+        <li>아이디명으로 선택 - 100점 자릿수 증가</li>
+        <li>인라인스타일방식 - 1000점 자릿수 증가</li>
+        <li>!important - 무조건 적용</li>
+    </ul>
+</body>
+</html>

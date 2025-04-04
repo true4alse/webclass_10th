@@ -1,0 +1,23 @@
+p{
+    /* 모든 p태그 들을 선택 */
+    color:red;
+}
+.a.b.c{
+    /* 모든 a클래스 들을 선택 */
+    color:blue;
+}
+p.a{
+    /* p태그 이면서 a클래스 */
+    color:aqua;
+}
+li.a{
+    /* li태그 이면서 a클래스 */
+    color:brown;
+}
+#b{
+    /* b아이디를 선택 */
+    color:green;
+}
+p#b{
+    /* p태그이면서 아이디가 b인 태그 */
+}

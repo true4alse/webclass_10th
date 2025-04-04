@@ -1,0 +1,36 @@
+.a{
+    height:600px;
+    /* background-color: purple;
+    background-image: url("../img/robin-9419575_640.jpg");
+    background-repeat: no-repeat;
+    background-position:0 0;
+    background-size:cover; */
+    background:purple url("../img/robin-9419575_640.jpg") no-repeat 0 0 / cover;
+
+}
+.b{
+    height:700px;
+    border:10px solid black;
+    background:
+    url("../img/bird-9476034_640.png") no-repeat 100% 0,
+    url("../img/robin-9419575_640.jpg") no-repeat 0 0;
+    background-blend-mode: multiply;
+}
+.c{
+    height:600px;
+    background: 
+    linear-gradient(10deg,#6db8ff 50%,#2292f4,#66ddfb 80%),
+    url("../img/bird-9476034_640.png") no-repeat 50% 50% / cover;
+    background-blend-mode: overlay;
+    /* border:10px solid #000000; */
+    padding:10px;
+}
+.box{
+    background-color: #ffffff4e;
+    width:400px;
+    margin:0 auto;
+    margin-top:200px;
+    padding:30px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}

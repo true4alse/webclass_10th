@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포함관계를 이용한 선택자 구성</title>
+    <link rel="stylesheet" href="./css/study3.css">
+</head>
+<body>
+    <h1>선택자의 종류</h1>
+    <div class="a">
+        <h1>자식 선택(문)자</h1>
+        <p>선택자 부분에서 >(꺽새)를 사용하면 (~자식 중에서)라고 해석</p>
+    </div>
+    <div class="b">
+        <section>
+            <h1>자손 선택(문)자</h1>
+            <p>선택자 부분에서 띄어쓰기를 사용하면 (~자손 중에서)라고 해석</p>
+        </section>
+    </div>
+
+    <div class="c">
+        <h1>형제 선택자</h1>
+        <p>선택자 부분에서 +,~를 사용하여 다음형제를 선택할 수 있다.</p>
+        <p>+는 다음형제 1개만 선택</p>
+        <p>~은 다음형제 복수개 선택</p>
+        <p>이전 형제는 선택 불가능</p>
+        <p>문단4</p>
+    </div>
+
+    <div class="d">
+        <h1>순번선택자</h1>
+        <p>태그가 갖고있는 순서를 사용하여 태그를 선택할 수 있다.</p>
+        <ul>
+            <li>리스트1</li>
+            <li>리스트2</li>
+            <li>리스트3</li>
+            <li>리스트4</li>
+            <li>리스트5</li>
+            <li>리스트6</li>
+        </ul>
+    </div>
+
+    <div class="e">
+        <h1>속성 선택자</h1>
+        <p>태그가 가지고 있는 속성과 속성 값을 사용하여 태그를 선택할 수 있다.</p>
+        <p>태그명[속성명="속성값"]</p>
+        <p><a href="#">Lorem ipsum</a> dolor sit amet consectetur adipisicing elit. In <a href="#" target="_blank">tempora</a> vel facere amet optio. Debitis pariatur accusantium maxime id, asperiores rem vel consequatur, <a href="#">expedita</a> ab odit, necessitatibus cumque dolorum veritatis.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+}
+.box{
+    border:4px solid black;
+    width:1000px;
+    margin:0 auto;
+}
+.box h1{
+    border: 2px solid red;
+    padding:20px 60px;
+}
+.box p{
+    border:2px solid blue;
+    margin:20px 40px 60px 80px;
+}

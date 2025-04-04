@@ -1,0 +1,25 @@
+body{
+    margin-bottom: 500px;;
+}
+
+
+div{
+    border: 1px solid red;
+    width:500px;
+    height:500px;
+    display:block;
+}
+strong{
+    border: 1px solid blue;
+}
+i{
+    border:1px solid orange;
+    width:500px;
+    height:500px;
+    display:inline;
+}
+.btn1{
+    display: inline-block;
+    width:200px;
+    height:200px;
+}

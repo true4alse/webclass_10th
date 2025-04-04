@@ -1,0 +1,66 @@
+html{
+    font-size:20px;
+    margin-bottom: 500px;
+}
+.ex1{
+    font-size:2rem;
+    margin-top:2rem;
+}
+.ex1 span{
+    font-size:2em;
+    color:red;
+}
+.ex2{
+    font-weight: 700;
+}
+.ex3{
+    line-height: 1.4;
+}
+div{
+    border:5px solid #000000;
+}
+.ex4{
+    font-style: normal;
+}
+.ex4 address{
+    font-style: normal;
+}
+.ex5{
+    letter-spacing: 5px;
+}
+.ex6{
+    word-spacing: 20px;
+}
+.ex7{
+    white-space: pre;
+}
+.ex8{
+    text-indent: 50px;
+}
+.ex9{
+    /* text-decoration: underline; */
+    text-decoration: line-through;
+}
+.ex10{
+    text-align: justify;
+}
+.ex11{
+    /* text-transform: uppercase; */
+    /* text-transform: lowercase; */
+    text-transform: capitalize;
+}
+.ex12{
+    /* word-break: break-all; */
+    word-break: keep-all;
+}
+.ex13 b{
+    font-size: 2em;
+}
+.ex13 i{
+    vertical-align: middle;
+}
+.ex14{
+    font-family: "오스왈","나명",sans-serif;
+    font-weight: 400;
+    
+}
