@@ -1,0 +1,21 @@
+.box{
+    border:5px solid #000000;
+    width:200px;
+    height:120px;
+}
+.hidden{
+    overflow: hidden;
+}
+.scroll{
+    overflow: scroll;
+}
+.over_y{
+    overflow-y:scroll;
+}
+.over_x{
+    overflow-x:scroll;
+    white-space: nowrap;
+}
+.auto{
+    overflow: auto;
+}

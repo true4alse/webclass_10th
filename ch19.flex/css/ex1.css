@@ -1,0 +1,33 @@
+*{margin:0;padding:0;}
+.box{background-color: #bbb;}
+.a{background-color: red;}
+.b{background-color: green;}
+.c{background-color: blue;}
+.d{background-color: gold;}
+.e{background-color: pink;}
+.box1{
+    width:800px;
+    display: flex;
+}
+.box1 div{
+    width:100px;
+    height:100px;
+}
+
+.box2{
+    display: flex;
+    width:800px;
+}
+.box2 div{
+    width:100px;
+    height:100px;
+}
+.box3{
+    display: flex;
+    width:800px;
+    justify-content: flex-end;
+}
+.box3 div{
+    width:100px;
+    height:100px;
+}

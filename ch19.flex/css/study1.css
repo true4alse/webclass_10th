@@ -1,0 +1,30 @@
+.box{
+    border:10px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    /* align-items: flex-end; */
+    align-content: flex-start;
+    height:400px;
+    width:550px;
+    margin:0 auto;
+    flex-wrap: wrap;
+}
+.box div{
+    width:200px;
+}
+.box div:nth-of-type(1){
+    background-color: aquamarine;
+}
+.box div:nth-of-type(2){
+    background-color: coral;
+}
+.box div:nth-of-type(3){
+    background-color: rebeccapurple;
+}
+.box div:nth-of-type(4){
+    background-color: sandybrown;
+}
+.box div:nth-of-type(5){
+    background-color: gold;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <h1>overflow</h1>
+    <p>태그의 컨텐트박스 안에 있는 컨텐츠들이 바깥으로 넘어가는 부분에 대해 대비하는 속성</p>
+    <p>전제조건 - 너비나 높이가 고정되어 있을 때</p>
+    <p>태그들은 위에서 아래로 거꾸로하는 테트리스의 블럭처럼 배치가 된다. 이 때 태그의 경계선(border)를 기준으로 쌓이게 된다.</p>
+    <p>태그의 경계선(border)는 컨텐트 박스를 포함하는 만큼 그려지기 때문에, 높이가 고정이 된 상태에서 컨텐츠가 흘러넘치게 된다면 인접한 두개의 태그에서 보여지는 컨텐츠 글자들이 겹쳐져서 가독성이 떨어질 가능성이 있다.</p>
+
+    <div class="box hidden">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, non doloribus rerum earum dolorum aperiam magni eum nulla dolores veritatis quidem eos accusantium, reiciendis vitae modi iste autem illo id!
+    </div>
+    <div class="box scroll">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis omnis laborum neque dolore quidem, sunt totam eaque vel quo nihil voluptatum perspiciatis magnam magni enim nostrum ipsa eum odio nisi!
+    </div>
+    <div class="box over_y">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur rem vitae fuga illum beatae culpa eveniet ut, laudantium necessitatibus, neque assumenda, id quae. Odio sapiente sequi porro voluptatibus. Maiores, explicabo!
+    </div>
+    <div class="box over_x">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore maiores cumque praesentium architecto a quam, totam maxime esse necessitatibus, nam incidunt nesciunt rem beatae temporibus atque, repellendus sint dolore? Vitae?
+    </div>
+    <div class="box auto">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil qui perferendis enim facere corporis cumque delectus provident, officia molestias recusandae doloribus aliquam laborum labore illo aspernatur soluta consequuntur sunt omnis?
+    </div>
+    
+</body>
+</html>

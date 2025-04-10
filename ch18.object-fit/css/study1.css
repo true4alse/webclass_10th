@@ -1,0 +1,13 @@
+.a{
+    width:400px;
+    height:400px;
+    object-fit:contain;
+    border:1px solid red;
+}
+.b{
+    width:400px;
+    height:400px;
+    object-fit:cover;
+    border:1px solid red;
+    object-position: 50% 50%;
+}

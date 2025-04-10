@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <h1>flex</h1>
+    <p>블록레벨태그들을 좌우로 나란히 배치하는 방법으로 flex방법을 배워보자</p>
+    <p>플렉스박스는 크게 부모태그(플렉스컨테이너) 자식태그(플렉스아이템) 두부분으로 나뉘며 각각의 부분마다 사용할 수 있는 css속성이 다르다.</p>
+    <p>플렉스 아이템들은 플렉스 컨테이너의 자식태그들을 말하며, 기본적으로 컨테이너의 메인축을 따라서 나란히 배치되는 특징을 갖는다.(오뎅꼬치)</p>
+    <p>교차축은 메인축의 방향에 따라서 자동으로 바뀐다.</p>
+
+    <hr>
+
+    <h2>flex-container(대장)에 지정하는 속성</h2>
+    
+    <hr>
+
+    <h3>flex-direction -> 메인축의 방향을 바꾸어 주는 속성</h3>
+    <ul>
+        <li>row(기본값) - 좌->우</li>
+        <li>row-reverse - 우->좌</li>
+        <li>column - 위->아래</li>
+        <li>column-reverse - 아래->위</li>
+    </ul>
+    <p>플렉스아이템들은 무조건 메인축의 시작지점부터 나란히 배치된다.(오뎅꼬치를 기억할 것)</p>
+    
+    <hr>
+
+    <h3>justify-content -> 메인축을 따라 아이템을 정렬하는 방법</h3>
+    <ul>
+        <li>flex-start(기본값) - 아이템들은 메인축의 시작 지점에 정렬</li>
+        <li>flex-end - 메인축의 마지막 지점에 정렬</li>
+        <li>center - 메인축 중앙 지점에 아이템 정렬</li>
+        <li>space-between - 메인축의 시작과 마지막 지점에 아이템을 맞춘 후 아이템들의 사이 여백을 동일하게 지정하도록 정렬</li>
+        <li>space-around - 각 아이템들의 사이 여백을 동일하게 지정하여 정렬</li>
+    </ul>
+
+    <hr>
+
+    <h3>align-items -> 교차축을 따라 아이템을 정렬하는 방법</h3>
+    <ul>
+        <li>stretch(기본값) - 교차축 길이만큼 아이템길이를 늘림</li>
+        <li>flex-start - 교차축의 시작지점에 아이템 정렬</li>
+        <li>flex-end - 교차축의 마지막지점에 아이템 정렬</li>
+        <li>center - 교차축의 중앙지점에 아이템 정렬</li>
+    </ul>
+
+    <hr>
+
+    <h3>flex-wrap - flex-item들의 줄바꿈을 설정하는 속성</h3>
+    <p>기본값은 nowrap 줄바꿈을 허용하지 않는다.</p>
+    <p>wrap 아이템들의 줄바꿈 허용</p>
+
+    <hr>
+
+    <h3>align-content</h3>
+    <p>flex-container에서 아이템들의 줄바꿈을 허용했을 때 container전체 높이를 교차축으로하여 아이템 그룹 전체를 정렬할 때 사용하는 속성</p>
+
+
+
+
+
+    <hr>
+    <div class="box">
+        <div>div1</div>
+        <div>div2</div>
+        <div>div3</div>
+        <div>div4</div>
+        <div>div5</div>
+    </div>
+</body>
+</html>
