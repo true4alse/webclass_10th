@@ -1,0 +1,36 @@
+.box{
+    background-color: #ccc;
+    align-items: stretch;
+    height:500px;
+    width:600px;
+    display: flex;
+    margin:0 auto;
+    /* flex-wrap: wrap; */
+}
+.box>div{
+    /* flex-basis:200px; */
+    /* flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1; */
+    flex:1;
+}
+
+
+.a{
+    background-color: red;
+    order:1;
+    align-self: flex-end;
+}
+.b{
+    background-color: green;
+    order:2;
+}
+.c{
+    background-color: blue;
+    align-self: center;
+}
+.d{
+    background-color: gold;
+    order:10000000;
+}
+

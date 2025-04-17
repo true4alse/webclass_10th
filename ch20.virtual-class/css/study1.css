@@ -1,0 +1,51 @@
+.box{
+    background:pink;
+    width:200px;
+    height:200px;
+}
+.box:hover{
+    /* 박스 클래스에 마우스를 올렸을 때 - 마우스 커서가 올려진 */
+    background-color: #000;
+    color:#fff;
+    width:300px;
+    height:300px;
+    padding:20px;
+}
+.box:active{
+    /* 박스클래스를 누르고 있을 때 - 눌려진 */
+    border:10px solid lime;
+}
+.box2{
+    background-color: #ccc;
+    height:500px;
+}
+.box2 .a{
+    background-color: red;
+    width:200px;
+    height:200px;
+}
+.box2 .a:hover{
+    /* box2클래스 안에 마우스가 올려진 a클래스들을 선택 */
+    background-color: blue;
+}
+.box2:hover .a{
+    /* 마우스가 올려진 box2클래스 안에 있는 a클래스들을 선택 */
+    border:10px solid lime;
+}
+.box3{
+    border:5px solid #000;
+}
+.box3 h1,
+.box3 p{
+    background-color: palevioletred;
+}
+.box3:after{
+    content:"";
+    border:1px solid red;
+    display:block;
+    width:300px;
+    height:50px;
+}
+.box3:before{
+    content:"첫번째 태그";
+}

@@ -1,0 +1,61 @@
+.box1{
+    background-color: red;
+    position: relative;
+    right:50px;
+    bottom:10px;
+}
+.box1+p{
+    background-color: #ccc;
+}
+.box2{
+    background-color: aquamarine;
+    height:400px;
+    position: relative;
+    width:400px;
+    margin:0 auto;
+}
+.box2 .a{
+    background-color: blueviolet;
+    width:50px;
+    height:50px;
+    position: absolute;
+    left:100px;
+    top:100px;
+}
+.box2 .b{
+    background-color: forestgreen;
+    width:50px;
+    height:50px;
+    position: absolute;
+    right:150px;
+    bottom:150px;
+    z-index: 1;
+}
+.box2 .c{
+    background-color: sandybrown;
+    width:50px;
+    height:50px;
+    position:absolute;
+    right:170px;
+    bottom:170px;
+    z-index: 100;
+}
+
+.box3{
+    width:100px;
+    height:100px;
+    background-color:gold;
+    position:fixed;
+    right:0;
+    top:0;
+}
+.box4{
+    height:200vh;
+    border:10px solid black;
+}
+.sticky_box{
+    background-color: aquamarine;
+    position: sticky;
+    left:0;
+    top:0;
+}

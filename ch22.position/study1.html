@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <h1>position</h1>
+    <p>포지션은 일반적인 레이아웃이 아닌 특수 레이아웃 목적으로 사용한다.</p>
+
+    <hr>
+    <h2>position:relative;</h2>
+    <p>position:relative가 설정된 태그는 현재 위치를 기준으로 left/right/top/bottom 이 4가지 값을 통하여 위아래좌우로 이동시킬 수 있다.</p>
+    <p>포지션이 relative로 설정된 태그는 원래있었던 위치를 기준으로 배치가 된다. 그리고 원래있었던 위치를 기억하여 그대로 자리를 차지한다.
+    (공중에 안뜬다. => 다른 태그의 위치에 영향을 끼치지 않는다.)</p>
+
+    <hr>
+    <h2>position:absolute;</h2>
+    <p>position:absolute가 설정된 태그는 자신을 포함하는 가까운 상위태그 중에서 position이 설정된 태그의 영역을 기준으로 배치된다.</p>
+    <p>absolute방식은 공중에 뜬다 => 다른 태그의 위치에 영향을 줄 수 있다.</p>     
+    <p>z-index값이 클 수록 앞 쪽에 배치된다. 기본값은 0이며 나중에 만든 태그일 수록 앞 쪽에 배치되는 특징을 갖는다.</p>
+
+    <hr>
+    <h2>position:fixed;</h2>
+    <p>기본적으로 absolute와 모든 특징이 같다.(띄워서배치된다,공간차지를하지않는다)</p>
+    <p>기준영역이 언제나 화면(view-port)이다.</p>
+    
+    <hr>
+    <h2>position:sticky;</h2>
+
+
+
+
+    <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt veritatis rem deserunt sit itaque reprehenderit voluptates quas, corporis, voluptatem error praesentium adipisci libero molestias iure qui eum vero id!</div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, tempore aperiam? Incidunt eos enim quod sed adipisci cum laudantium. Fuga similique sequi quae mollitia, totam non corrupti libero repellat nulla!</p>
+
+    <div class="box2">
+        <div class="a">a</div>
+        <div class="b">b</div>
+        <div class="c">c</div>
+    </div>
+
+    <div class="box3">box3</div>
+
+    <div class="box box4">
+        <h1>title</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eos magnam veniam cumque similique repudiandae aspernatur quibusdam dolorem sunt itaque debitis totam perspiciatis quos asperiores deleniti ipsam nemo soluta assumenda!</p>
+        <div class="sticky_box">
+            sticky-box
+        </div>
+    </div>
+
+    <div class="box box4">
+        <h1>title</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eos magnam veniam cumque similique repudiandae aspernatur quibusdam dolorem sunt itaque debitis totam perspiciatis quos asperiores deleniti ipsam nemo soluta assumenda!</p>
+        <div class="sticky_box">
+            sticky-box
+        </div>
+    </div>
+</body>
+</html>

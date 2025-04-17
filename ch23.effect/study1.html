@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>효과</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <h1>border-radius</h1>
+    <p>박스의 가장자리의 모양을 둥글게 설정</p>
+    <p>박스의 가장자리에 border-radius:20px 을 설정하면 반지름이 20픽셀인 원의 곡선 만큼 모서리가 둥글게 그려짐</p>
+    <hr>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+
+    <hr>
+
+    <h1>box-shadow</h1>
+    <p>태그에 그림자를 적용할 수 있다.</p>
+    <p>box-shadow:x좌표 y좌표 그림자확산정도 색상</p>
+    
+    <div class="box box4"></div>
+    <span class="button_style">button</span>
+    <hr>
+    <h1>opacity</h1>
+    <p>선택한 태그의 불투명도를 지정할 수 있다.</p>
+    <p>opacity:0 이 되는것은 불투명도가 0이되어 완전히 안보이는 상태가 된다 -> 태그가 사라지는것은 아니기 때문에 태그의 공간은 그대로 차지한다.</p>
+    <p>display:none 형식으로 태그를 숨기면 태그자체를 없애버리는 것이다. -> 공간차지도 하지않는다.</p>
+    <div class="box box5"></div>
+    <div class="box box6"></div>
+    <div class="box box7">box7</div>
+    <hr>
+    <h1>filter</h1>
+    <div class="gallery">
+        <figure>
+            <img src="./img/cat.jpg" alt="고양이">
+            <figcaption>원본</figcaption>
+        </figure>
+        <figure class="filter1">
+            <img src="./img/cat.jpg" alt="고양이">
+            <figcaption>grayscale(1)</figcaption>
+        </figure>
+        <figure class="filter2">
+            <img src="./img/cat.jpg" alt="고양이">
+            <figcaption>brightness(0.2)</figcaption>
+        </figure>
+        <figure class="filter3">
+            <img src="./img/cat.jpg" alt="고양이">
+            <figcaption>blur(20px)</figcaption>
+        </figure>
+        <figure class="filter4">
+            <img src="./img/cat.jpg" alt="고양이">
+            <figcaption>hue-rotate(180deg)</figcaption>
+        </figure>
+    </div>
+    <hr>
+    <h1>mix-blend-mode</h1>
+    <figure class="bg blend1">
+        <img src="./img/cat.jpg" alt="고양이">
+        <figcaption>color-burn</figcaption>
+    </figure>
+    <figure class="bg blend2">
+        <img src="./img/cat.jpg" alt="고양이">
+        <figcaption>difference</figcaption>
+    </figure>
+    <figure class="bg blend3">
+        <img src="./img/cat.jpg" alt="고양이">
+        <figcaption>overlay</figcaption>
+    </figure>
+</body>
+</html>

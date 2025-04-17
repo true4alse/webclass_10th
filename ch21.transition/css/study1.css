@@ -1,0 +1,41 @@
+.box{
+    background-color: #ccc;
+    width:200px;
+    height:200px;
+}
+.box1{
+    width:200px;
+    /* transition-property:width;
+    transition-duration: 400ms;
+    transition-timing-function: ease;
+    transition-delay: 0s; */
+    transition:width 400ms ease 0s;
+}
+.box1:hover{
+    width:300px;
+}
+.box2{
+    margin-top: 20px;
+    width:300px;
+    height:300px;
+    transition:
+    width 0.4s ease 0s,
+    height 0.4s ease 0.4s,
+    background-color 0.4s ease 0.8s;
+}
+.box2:hover{
+    width:400px;
+    height:400px;
+    background-color: pink;
+}
+.box3{
+    background-color: pink;
+    transition:all 0.4s ease 0s;
+    width:200px;
+}
+.box3:hover{
+    font-size:50px;
+    width:300px;
+    padding:20px;
+    text-decoration: underline;
+}

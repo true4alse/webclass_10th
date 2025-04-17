@@ -1,0 +1,99 @@
+.box{
+    width:200px;
+    height: 200px;
+    background-color: chocolate;
+    margin:200px auto;
+}
+.box1{
+    border-radius: 50px;
+    transition: all 1s ease 0s;
+}
+.box1:hover{
+    border-radius: 0;
+}
+.box2{
+    border-radius: 10px 20px 30px 40px;
+    transition: all 1s ease 0s;
+}
+.box2:hover{
+    border-radius: 40px 30px 20px 10px;
+}
+.box3{
+    border-radius: 50%;
+    /* 자신의 너비와 높이의 절반 만큼 픽셀 */
+}
+.box4{
+    box-shadow:
+    10px 10px 0 #000000,
+    -10px -10px 0 red,
+    10px 10px 0 blue inset;
+    transition: all 1s ease 0s;
+}
+.box4:hover{
+    box-shadow:
+    0px 0px 0 #000000,
+    0px 0px 0 red,
+    0px 0px 0 blue inset;
+}
+.button_style{
+    border:2px solid #000;
+    display: inline-block;
+    padding:0.5rem 2rem;
+    box-shadow: 0 0 0 red inset;
+    transition: all 0.4s ease 0s;
+}
+.button_style:hover{
+    box-shadow: 200px 0 0 red inset;
+    color:#fff;
+}
+.box5{
+    margin:0;
+    opacity: 0%;
+}
+.box6{
+    margin:0;
+    display: none;
+    /* 없애버림 */
+}
+.box7{
+    margin:0;
+}
+.gallery img{
+    transition: all 1s ease 0s;
+}
+.filter1 img{
+    filter: grayscale(1);
+}
+.filter1 img:hover{
+    filter: grayscale(0);
+}
+.filter2 img{
+    filter: brightness(0.2);
+}
+.filter2 img:hover{
+    filter: brightness(1);
+}
+.filter3 img{
+    filter: blur(20px);
+}
+.filter3 img:hover{
+    filter: blur(0px);
+}
+.filter4 img{
+    filter:hue-rotate(180deg);
+}
+.filter4 img:hover{
+    filter:hue-rotate(0deg);
+}
+.bg{
+    background: linear-gradient(lightcoral,green);
+}
+.blend1 img{
+    mix-blend-mode: color-burn;
+}
+.blend2 img{
+    mix-blend-mode: difference;
+}
+.blend3 img{
+    mix-blend-mode: overlay;
+}

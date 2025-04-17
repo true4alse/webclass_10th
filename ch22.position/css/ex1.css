@@ -1,0 +1,313 @@
+.box{
+    background-color: #ccc;
+    width:800px;
+    height:300px;
+    margin:500px auto;
+}
+.a{background-color: red;}
+.b{background-color: green;}
+.c{background-color: blue;}
+.d{background-color: gold;}
+.e{background-color: purple;}
+
+.box1{
+    position: relative;
+    overflow: hidden;
+}
+.box1 div{
+    width:100px;
+    height:100px;
+    transition: all 1s cubic-bezier(1, 0.02, 0, 1.08) 0s;
+}
+.box1 .a{
+    position: absolute;
+    left:0;
+    top:0;
+}
+.box1:hover .a{
+    left:-100px;
+    top:-100px;
+}
+.box1 .b{
+    position: absolute;
+    left:0;
+    bottom:0;
+}
+.box1:hover .b{
+    left:-100px;
+    bottom:-100px;
+}
+.box1 .d{
+    position: absolute;
+    right:0;
+    top:0;
+}
+.box1:hover .d{
+    right:-100px;
+    top:-100px;
+}
+.box1 .e{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.box1:hover .e{
+    right:-100px;
+    bottom:-100px;
+}
+
+.box1 .c{
+    position: absolute;
+    left:calc(50% - 50px);
+    top:calc(50% - 50px)
+}
+
+.box2{
+    position: relative;
+    overflow: hidden;
+}
+.box2 div{
+    width:100px;
+    height:100px;
+    transition:all 1s ease 0s;
+}
+.box2 .a{
+    position:absolute;
+    left:-100px;
+    top:-100px;
+}
+.box2:hover .a{
+    left:0;
+    top:0;
+}
+.box2 .b{
+    position: absolute;
+    left:-100px;
+    bottom:-100px;
+}
+.box2:hover .b{
+    left:0;
+    bottom:0;
+}
+.box2 .c{
+    position: absolute;
+    left:calc(50% - 50px);
+    bottom:-100px;
+}
+.box2:hover .c{
+    left:calc(50% - 50px);
+    bottom:calc(50% - 50px);
+}
+.box2 .d{
+    position: absolute;
+    right:-100px;
+    top:-100px;
+}
+.box2:hover .d{
+    right:0;
+    top:0;
+}
+.box2 .e{
+    position: absolute;
+    right:-100px;
+    bottom:-100px;
+}
+.box2:hover .e{
+    right:0;
+    bottom:0;
+}
+
+.box3{
+    position: relative;
+}
+.box3 div{
+    width:calc(100% / 5);
+    height:100%;
+}
+.box3 .a{
+    position: absolute;
+    left:0;
+    top:-300px;
+}
+.box3 .b{
+    position:absolute;
+    left:160px;
+    top:300px;
+}
+.box3 .c{
+    position: absolute;
+    left:320px;
+    top:-300px;
+}
+.box3 .d{
+    position: absolute;
+    left:calc(160px * 3);
+    top:300px;
+}
+.box3 .e{
+    position: absolute;
+    right:0;
+    top:-300px;
+}
+
+.box4{
+    position: relative;
+}
+.box4 div{
+    width:calc(100% / 5);
+    height:100%;
+}
+.box4 .a{
+    position: absolute;
+    left:0;
+    top:-150px;
+}
+.box4 .b{
+    position: absolute;
+    left:160px;
+    top:150px;
+}
+.box4 .c{
+    position: absolute;
+    left:320px;
+    top:-150px;
+}
+.box4 .d{
+    position: absolute;
+    left:480px;
+    top:150px;
+}
+.box4 .e{
+    position: absolute;
+    right:0;
+    top:-150px;
+}
+
+.box5{
+    position: relative;
+}
+.box5 div{
+    width:100px;
+    height:100px;
+}
+.box5 .a{
+    position: absolute;
+    left:-100px;
+    top:-100px;
+    z-index: 1;
+}
+.box5 .b{
+    position: absolute;
+    left:-50px;
+    top:-50px;
+}
+.box5 .c{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index: 1;
+}
+.box5 .d{
+    position: absolute;
+    left:50px;
+    top:50px;
+}
+.box5 .e{
+    position: absolute;
+    left:100px;
+    top:100px;
+    z-index: 1;
+}
+.box6{
+    position: relative;
+}
+.box6 .a{
+    position: absolute;
+    width:300px;
+    height:300px;
+    left:0;
+    top:-150px;
+}
+.box6 .b{
+    width:100px;
+    height:100px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.box6 .c{
+    width:100px;
+    height:100px;
+    position: absolute;
+    right:0;
+    top:0;
+}
+.box6 .d{
+    width:300px;
+    height:300px;
+    position: absolute;
+    right: 0;
+    top:150px;
+}
+.box6 .e{
+    width:100px;
+    height:100px;
+    position: absolute;
+    left:calc(50% - 50px);
+    top:calc(50% - 50px);
+}
+
+.box7{
+    display: flex;
+}
+/* .box7 .a{
+    width:400px;
+}
+.box7 .b{
+    width:400px;
+} */
+.box7>div{
+    width:50%;
+    position: relative;
+}
+
+.box7 .c{
+    position: absolute;
+    width:100px;
+    height:100px;
+    right:0;
+    top:0;
+}
+.box7 .a{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.box7 .b .d{
+    width:100px;
+    height:50px;
+    position: absolute;
+    left:0;
+    bottom:0;
+}
+.box7 .b .e{
+    width:100px;
+    height:50px;
+    position: absolute;
+    right:0;
+    bottom: 0;
+}
+
+.box8{
+    position: relative;
+}
+.wrap{
+    position:absolute;
+    left:0;
+    top:300px;
+    width:800px;
+    height:300px;
+    display: flex;
+}
+.wrap div{flex:1;}
