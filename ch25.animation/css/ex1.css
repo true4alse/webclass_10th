@@ -1,0 +1,39 @@
+*{margin:0;padding:0;}
+.station{
+    border:1px solid red;
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+}
+.train{
+    width:200%;
+    display: flex;
+}
+.train section{
+    width:50%;
+}
+@keyframes moveA {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes moveB {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
+.a{
+    animation: moveA 10s linear 0s infinite;
+    border:1px solid red;
+}
+.b{
+    animation: moveB 10s linear 5s infinite;
+    border:1px solid blue;
+}
