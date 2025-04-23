@@ -9,6 +9,7 @@
 .train{
     width:200%;
     display: flex;
+    align-items: center;
 }
 .train section{
     width:50%;
@@ -29,11 +30,18 @@
         transform: translateX(-200%);
     }
 }
+.train section{
+    white-space: nowrap;
+    overflow: hidden;
+}
 .a{
-    animation: moveA 10s linear 0s infinite;
-    border:1px solid red;
+    animation: moveA 10s linear -5s infinite;
+    
+    font-size:calc(100vw / 15);
 }
 .b{
-    animation: moveB 10s linear 5s infinite;
-    border:1px solid blue;
+    animation: moveB 10s linear 0s infinite;
+    
+    font-size:calc(100vw / 17);
+
 }

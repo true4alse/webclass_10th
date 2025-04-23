@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표준 내장 도구(함수-function) 모음</title>
+</head>
+<body>
+    <h1>브라우저에 내장되어있는 기본 함수</h1>
+
+    <hr>
+    <h2>String()</h2>
+    <p>숫자데이터를 문자데이터로 바꿔주는 함수</p>
+    <script>
+        100
+        "100"
+        console.log(String(String(100).length+"ef")[0])
+    </script>
+
+    <h2>Number()</h2>
+    <p>문자데이터를 숫자데이터로 바꿔주는 함수</p>
+    <script>
+        // "안녕" x
+        Number("200")
+        "200"+"200"
+        // "200200"
+        "200"+200
+        // "200200" 
+        console.log(Number("200")+200)
+        // 400
+        console.log(Number(("200"+123)[4])+1)
+        Number(("200"+123)[4])+1
+    </script>
+
+    <h2>typeof()</h2>
+    <p>괄호안에 데이터의 형태를 검사하고 그 결과를 문자데이터형태로 함수가 사용된 자리에 남기는 함수</p>
+    <script>
+        console.log(typeof(100))
+        console.log(typeof("헬로우"))
+    </script>
+</body>
+</html>

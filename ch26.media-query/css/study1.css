@@ -1,0 +1,18 @@
+@media (max-width:768px){
+    /* 화면 너비가 0~768픽셀 사이인 경우 적용 되는 스타일 */
+    .a{
+        color:red;
+    }
+}
+@media (min-width:769px) and (max-width:1024px){
+    /* 화면 너비가 769~1024픽셀 사이인 경우 적용 되는 스타일 */
+    .a{
+        color:blue;
+    }
+}
+@media (min-width:1025px){
+    /* 화면 너비가 1025픽셀 이상인 경우 적용 되는 스타일 */
+    .a{
+        color:green;
+    }
+}
