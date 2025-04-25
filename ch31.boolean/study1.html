@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boolean</title>
+</head>
+<body>
+    <h1>boolean 데이터</h1>
+    <p>값이 두개 밖에 없다. true/false</p>
+    <h2>비교를 통하여 참거짓이 계산된다</h2>
+    <p>크다,작다,같다,같지않다 와 같은 비교를 통하여 참거짓이 계산된다</p>
+    <p>!는 자바스크립트에서 부정의의미 (not)으로 사용된다.</p>
+    <script>
+        10>5 //true
+        5<2 //false
+        10>=10 //true
+        10<=10 //true
+        10==10 //true
+        10!=10 //false
+        !(5>2) //false
+        !!(5>2) //true
+        !!!(10!=10)
+    </script>
+
+    <h1>있으면 true 없으면 false</h1>
+    <p>false로 간주 되는 경우</p>
+    <ul>
+        <li>숫자데이터인데 값이 0인 경우</li>
+        <li>문자데이터인데 내용이 없는 빈문자인 경우</li>
+        <li>변수를 선언했는데 변수 안에 아무 값도 저장되지 않은 경우</li>
+        <li>undefined 값은 false로 간주한다</li>
+        <li>null 값은 false로 간주한다</li>
+    </ul>
+    <script>
+        100 // true로 간주
+        0 // false로 간주
+        -200 // true로 간주
+
+        "" // false로 간주
+        "abc" // true로 간주
+
+        let a = 20 // true로 간주
+        let b  // false로 간주
+        let c = null
+        // alert(c)
+        !30 // false로 간주 -> 수가 있지 않다면
+        !0 // true로 간주 -> 수가 없지 않다면
+        !"" // true로 간주 -> 문자가 없지 않다면
+        !!"" // false로 간주 -> 문자가 없지 않는게 아니라면
+        !undefined // true
+        !!null // false
+        
+    </script>
+
+
+
+</body>
+</html>
