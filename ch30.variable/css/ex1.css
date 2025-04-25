@@ -1,0 +1,30 @@
+.mc{color:pink;}
+table{
+    border-collapse: collapse;
+    width:100%;
+}
+table td{
+    border:1px solid #ccc;
+    width:50px;
+    padding:10px;
+    border-right:none;
+}
+table th{
+    width:50px;
+    border:1px solid #ccc;
+    border-left:none;
+}
+table tr:last-of-type{
+    background-color: pink;;
+}
+.bdr{
+    border-right:1px solid #ccc;
+}
+.scoreTb{
+    border:2px dashed #000;
+    display: inline-block;
+    text-align: center;
+    padding:20px;
+    width: 350px;
+    border-radius: 30px;
+}

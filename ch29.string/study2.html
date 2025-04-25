@@ -37,6 +37,22 @@
     <script>
         console.log(typeof(100))
         console.log(typeof("헬로우"))
+        typeof(100)[0] + typeof("헬로우")[2]
+        typeof(typeof(100))[2]
     </script>
+
+    <h2>prompt()</h2>
+    <p>홈페이지 사용자에게 괄호안의 질문을 한 후 사용자가 입력한 대답을 함수가 사용되었던 자리에 문자데이터형태로 남겨주는 함수</p>
+    <p>사용자에게 질문을 하고 대답을 가져와주는 함수</p>
+
+    <script>
+        // prompt("이름이 모니?")
+        // prompt("나이가 몇 살이니?") // "100"
+        let name = prompt("이름이 모니")
+        document.write("<p><i>"+name+"</i>님 환영해요!</p>")
+        document.write("<p>"+name+"님의 이름은 "+name.length+"글자이군요.</p>")
+    </script>
+    
+    
 </body>
 </html>

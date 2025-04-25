@@ -1,0 +1,87 @@
+*{margin:0;padding:0;}
+.wrap{
+    width:1000px;
+    margin:0 auto;
+}
+.wrap h1{
+    background-color: orange;
+    color:#fff;
+    padding:20px;
+    margin-bottom: 20px;;
+}
+.wrap>p{
+    background-color: #eee;
+    padding:20px;
+}
+.board{
+    border:1px solid #eee;
+    margin-top: 20px;;
+    padding:20px;
+    padding-bottom: 50px;;
+}
+.board dl{
+    display: flex;
+    flex-wrap: wrap;
+    width:50%;
+    margin-bottom: 40px;
+}
+.board dl>*{
+    width:50%;
+    box-sizing: border-box;
+}
+.board dl dd{
+    color:orange;
+}
+.bmigrp{
+    /* border:1px solid red; */
+    display: flex;
+    position: relative;
+}
+.bmigrp section{
+    /* border:1px solid blue; */
+    padding:20px;
+    position: relative;
+}
+.a{
+    background-color: skyblue;
+    /* width:24%;  */
+    flex:24;
+}
+.b{
+    background-color: lightgreen;
+    /* width:20%; */
+    flex:20;
+}
+.c{
+    background-color: pink;
+    /* width:15%; */
+    flex:15;
+}
+.d{
+    background-color: lightcoral;
+    /* width:41%; */
+    flex:41;
+    flex-basis: 0;
+    flex-grow: 41;
+    flex-shrink: 1;
+}
+.t1{
+    position: absolute;
+    left:0;
+    top:0;
+    transform:translateY(-100%);
+}
+.t2{
+    position: absolute;
+    left:0;
+    bottom:0;
+    transform:translateY(100%); 
+}
+.t3,
+.t4,
+.t5{
+    position: absolute;
+    right:0;
+    top:0;
+    transform: translate(50%,-100%);
+}
