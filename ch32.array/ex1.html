@@ -10,8 +10,32 @@
     <div class="pictures">
         <h1>우리반 멋쟁이들</h1>
         <p>우리반 멋쟁이 신사 숙녀를 소개합니다.</p>
+        <script src="./js/classmate.js"></script>
+        <script>
+            console.log(classmate)
+        </script>
         <ul class="friendsList">
-            <li>
+            <script>
+                for(let i=0 ; i<classmate.length ; i++){
+                    document.write(`
+                     <li>
+                        <figure>
+                            <img src="./imgs/${classmate[i][6]}" alt="${classmate[i][0]} 지브리 풍 사진">
+                        </figure>
+                        <div class="txt">
+                            <p>${classmate[i][0]}</p>
+                            <p>${classmate[i][1]}세</p>
+                            <p>${classmate[i][2]}</p>
+                            <p>${classmate[i][3]?"기혼":"미혼"}</p>
+                            <p>${classmate[i][4]}</p>
+                            <p>${classmate[i][5]}</p>
+                        </div>
+                    </li>                    
+                `)
+                }
+                
+            </script>
+            <!-- <li>
                 <figure>
                     <img src="./imgs/정현진.png" alt="정현진 지브리 풍 사진">
                 </figure>
@@ -23,72 +47,7 @@
                     <p>INFP</p>
                     <p>고양이랑 놀기, 물고기 키우기, 뛰기, 영상 제작하기</p>
                 </div>
-            </li>
-            <li>
-                <figure>
-                    <img src="./imgs/정현진.png" alt="정현진 지브리 풍 사진">
-                </figure>
-                <div class="txt">
-                    <p>정현진</p>
-                    <p>49세</p>
-                    <p>남자</p>
-                    <p>미혼</p>
-                    <p>INFP</p>
-                    <p>고양이랑 놀기, 물고기 키우기, 뛰기, 영상 제작하기</p>
-                </div>
-            </li>
-            <li>
-                <figure>
-                    <img src="./imgs/정현진.png" alt="정현진 지브리 풍 사진">
-                </figure>
-                <div class="txt">
-                    <p>정현진</p>
-                    <p>49세</p>
-                    <p>남자</p>
-                    <p>미혼</p>
-                    <p>INFP</p>
-                    <p>고양이랑 놀기, 물고기 키우기, 뛰기, 영상 제작하기</p>
-                </div>
-            </li>
-            <li>
-                <figure>
-                    <img src="./imgs/정현진.png" alt="정현진 지브리 풍 사진">
-                </figure>
-                <div class="txt">
-                    <p>정현진</p>
-                    <p>49세</p>
-                    <p>남자</p>
-                    <p>미혼</p>
-                    <p>INFP</p>
-                    <p>고양이랑 놀기, 물고기 키우기, 뛰기, 영상 제작하기</p>
-                </div>
-            </li>
-            <li>
-                <figure>
-                    <img src="./imgs/정현진.png" alt="정현진 지브리 풍 사진">
-                </figure>
-                <div class="txt">
-                    <p>정현진</p>
-                    <p>49세</p>
-                    <p>남자</p>
-                    <p>미혼</p>
-                    <p>INFP</p>
-                    <p>고양이랑 놀기, 물고기 키우기, 뛰기, 영상 제작하기</p>
-                </div>
-            </li>
-            <li>
-                <figure>
-                    <img src="./imgs/정현진.png" alt="정현진 지브리 풍 사진">
-                </figure>
-                <div class="txt">
-                    <p>정현진</p>
-                    <p>49세</p>
-                    <p>남자</p>
-                    <p>미혼</p>
-                    <p>INFP</p>
-                    <p>고양이랑 놀기, 물고기 키우기, 뛰기, 영상 제작하기</p>
-                </div>
-            </li>
+            </li> -->
         </ul>
     </div>
 </body>

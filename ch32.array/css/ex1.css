@@ -2,11 +2,16 @@
 ul{list-style: none;}
 .friendsList img{
     width:400px;
-    height:400px;
+    height:550px;
     object-fit: cover;
     border-radius: 14px;
     filter: grayscale(1);
+    /* object-position: 0px 10px; */
 }
+/* .friendsList .wide img{
+    object-fit: contain;
+    height:auto;
+} */
 .friendsList img:hover{
     filter: grayscale(0);
 }
@@ -28,7 +33,7 @@ ul{list-style: none;}
     display: flex;
     flex-wrap: wrap;
     gap:20px;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .friendsList>li{
     /* border:1px solid #000; */

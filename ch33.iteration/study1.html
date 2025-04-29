@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 - for</title>
+</head>
+<body>
+    <h1>반복문</h1>
+    <p>조건이 참인동안 소스코드를 반복하는 문법구조</p>
+    <p>반복문에서는 의도한 횟수만큼 반복하기 위하여 다음과 같은 3가지 구성요소를 가져야한다.</p>
+    <ul>
+        <li>반복에 사용될 변수</li>
+        <li>반복의 조건</li>
+        <li>변수의 증감식</li>
+    </ul>
+    <p>왜냐하면 무한반복이되면 브라우저가 폭발하기 때문이다.</p>
+    <script>
+        for(let i=0 ; i<3 ; i++){
+            // 반복되는 소스코드
+            console.log("하이"+i)
+        }
+
+        let sum = 0
+        for(let i=1 ; i<=3 ; i++){
+            sum = sum + i
+        }
+        console.log(sum)
+
+        for(let i=0 ; 4-i ; i++){
+            console.log(i)
+        }
+
+        
+    </script>
+</body>
+</html>
