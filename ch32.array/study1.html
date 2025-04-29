@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+</head>
+<body>
+    <h1>배열 - array</h1>
+    <p>연관된 데이터들을 모아놓은 집합</p>
+    <p>배열 안에는 콤마로 구분하여 원소를 여러개 입력할 수 있다</p>
+    <p>배열의 원소는 저장한 순서대로 순번이 매겨진다.</p>
+    <p>배열 안에는 모든 데이터 형태가 배열의 원소로 저장될 수 있다.</p>
+    <script>
+        let classmates = [
+            "염보람",
+            "정현진",
+            "안혜진",
+            "이은수",
+            "지혜선",
+            "정진영",
+            "신혜수",
+            "양지수",
+            "오재석"
+        ]
+        console.log(classmates)
+        console.log(classmates[1])
+        console.log(classmates[2][0]) // "안"
+        console.log(classmates[0][0]+classmates[3][2]+classmates[5][1])
+        console.log(classmates.length)
+        console.log(classmates[9])
+        classmates[9]=classmates[0][0]+classmates[3][2]+classmates[5][1]
+        console.log(classmates)
+        console.log(classmates.length)
+
+        let person1 = ["정현진",48,"남자",false,"infp"]
+        console.log(person1[0])
+        console.log(person1[2])
+        console.log((person1[3]?"기혼":"미혼")[0])
+        
+        let person2 = ["이은수",32,"여자",false,"intp"]
+        console.log(person2[3])
+
+        let teams = [
+            ["정현진","이은수","안혜진"],
+            ["염보람","지혜선","정진영"],
+            ["신혜수","양지수","오재석"]
+        ]
+        teams[0][2][1] + teams[1][1][2] + teams[2][2][1]
+        "혜선재"
+        
+    </script>
+</body>
+</html>

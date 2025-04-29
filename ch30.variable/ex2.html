@@ -16,13 +16,15 @@
                 let uwe = Number(prompt("몸무게"))
                 let uhe = Number(prompt("키"))/100 // 170센티미터 -> 1.7미터
                 let bmi = Math.round((uwe / (uhe*uhe))).toFixed(2)
+                let result = bmi>=25?"비만":bmi>=23?"과체중":bmi>=18.5?"정상":"저체중"
+
                 document.write(`<dl>
                 <dt>체중</dt>
                 <dd>${uwe}kg</dd>
                 <dt>키</dt>
                 <dd>${uhe*100}cm</dd>
                 <dt>비만도 결과</dt>
-                <dd>비만입니다.</dd>
+                <dd>${result}입니다.</dd>
                 <dt>BMI 지수</dt>
                 <dd>${bmi}</dd>
             </dl>`)

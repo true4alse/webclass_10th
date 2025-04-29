@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리연산자</title>
+</head>
+<body>
+    <h1>&& (and연산자)</h1>
+    <p>&& 연산문자는 '그리고'라고 해석을 하며 전체경우가 true일 때만 true로 계산을 하고 어느 한 경우라도 false라면 전체를 false로 계산한다.</p>
+    <script>
+        10>2 && 5>2 && 4>2 // true
+        8>1 && 7>0 && 5<4 // false
+        10>4 && !0 && 20 // true
+        !"" && "good" && !30 // false
+
+        let ccc = 10 && 0 && 5
+        console.log(ccc)
+    </script>
+    <h1>|| (or연산자)</h1>
+    <p>또는 이라고 해석</p>
+    <p>여러 경우 중 하나라도 true라면 전체를 true로 계산</p>
+    <script>
+        10>2 || 5>2 || 3<2 // true
+        0 || !10 || 20 // true
+
+        let ddd = 0 || 10 || 20
+        console.log(ddd)
+    </script>
+</body>
+</html>
