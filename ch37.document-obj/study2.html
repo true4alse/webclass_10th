@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태그 제어하기</title>
+    <style>
+        .a.on{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>태그의 속성 편집하기</h1>
+    <p>태그가 갖고있는 속성 값을 설정하거나 가져올 수 있다.</p>
+    <figure>
+        <img class="img1" src="./imgs/오재석.PNG" alt="오재석">
+        <figcaption>오재석</figcaption>
+    </figure>
+
+    <form action="#">
+        <label for="username">이름</label>
+        <input type="text" placeholder="이름을 입력해주세요." id="username">
+    </form>
+
+    <script>
+        let img1 = document.querySelector(".img1")
+        console.log(img1.getAttribute("src"))
+        img1.setAttribute("src","./imgs/신혜수.png")
+        img1.setAttribute("alt","신혜수")
+    </script>
+    <h2>getAttribute("태그속성명")</h2>
+    <p>선택한 태그의 속성 값을 가져올 때 사용하는 함수</p>
+    <h2>setAttribute("태그속성명","적용할속성값")</h2>
+    <p>선택한 태그의 속성 값을 다른 값으로 적용할 때 사용하는 함수</p>
+
+    <h1>태그의 내용 편집하기</h1>
+    <p>태그의 컨텐츠를 다른 내용으로 변경할 수 있다.</p>
+    <p class="tt">이 내용은 다른 내용으로 변경됨.</p>
+    <script>
+        let tt = document.querySelector(".tt")
+        console.log(tt.textContent)
+        tt.innerHTML = "100%"
+    </script>
+
+    <hr>
+    <h1>태그의 클래스 제어하기</h1>
+    <p>선택된 태그의 클래스를 변경할 수 있다.</p>
+    <p class="a">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia modi itaque corrupti, impedit consequatur ipsam, laborum aperiam, delectus voluptate suscipit consequuntur molestias culpa ea quo id esse earum unde a!</p>
+    <script>
+        let a = document.querySelector(".a")
+        a.classList.add("on")
+        a.classList.add("active")
+        a.classList.remove("on")
+    </script>
+    <hr>
+    <h1>포함관계를 사용하여 태그 선택하기</h1>
+    <p>태그의 부모 자식관계 형제관계를 사용하여 태그 선택하기</p>
+    <p>.parentElement -> 선택한 태그의 부모 태그를 선택</p>
+    <p>.children -> 선택한 태그의 자식 태그들을 선택</p>
+    <p>.nextElementSibling -> 선택한 태그의 다음형제 태그를 선택</p>
+    <p>.previousElementSibling -> 선택한 태그의 이전형제 태그를 선택</p>
+    <ul class="list">
+        <li>1</li>
+        <li class="me">2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <script>
+        let ultag = document.querySelector(".list")
+        let litag = ultag.children // []배열형태로 남겨지게 되기 때문에 배열의 원소 접근표현으로 자식태그를 접근해야함
+        litag[3].style.color = "red"
+        ultag.parentElement.style.backgroundColor = "ivory"
+        document.querySelector(".me").nextElementSibling.style.color = "blue"
+        document.querySelector(".me").previousElementSibling.style.color = "orange"
+        console.log(document.querySelector(".me").parentElement.parentElement.children[2].children[0].getAttribute("src"))
+        console.log(document.querySelector(".me").parentElement.previousElementSibling.previousElementSibling.previousElementSibling.textContent[1])
+        console.log(document.querySelector(".me").parentElement.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.textContent.length)
+    </script>
+
+
+
+
+</body>
+</html>

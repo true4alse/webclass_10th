@@ -1,0 +1,30 @@
+main{
+    width:1200px;
+    margin:0 auto;
+}
+.popup{
+    border:1px solid #000;
+    width: 400px;
+    padding:20px;
+    position: fixed;
+    left:200px;
+    top:200px;
+    background-color: #fff;
+}
+.popup.hidden{
+    display: none;
+}
+.popupCtrl{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.popupCtrl span{
+    border:1px solid #000;
+    padding:2px 10px;
+    cursor: pointer;
+}
+.popupCtrl span:hover{
+    background-color: #000;
+    color:#fff;
+}

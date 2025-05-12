@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수의 리턴</title>
+</head>
+<body>
+    <h2>함수 안에서 return 표현</h2>    
+    <p>함수 안에서 return이라는 키워드를 입력하면 함수는 그 즉시 실행종료가 되며, return 키워드 오른쪽에 있는 값을 함수가 사용되었던 자리에 남기고 사라진다.</p>
+
+    <script>
+        function a(){
+            alert("안녕하세요")
+            return "좋은아침"
+        }
+        // let b = a()
+        // alert(b)
+
+        function c(n1,n2){
+            return n1+n2
+            alert("입력한 두 개의 숫자를 더하겠습니다.")
+        }
+        // alert(c(20,30))
+        c(c(40,50),c(-30,20))
+
+        function getAver1(n1,n2,n3,n4){
+            return (n1+n2+n3+n4)/4
+        }
+        // alert(getAver1(10,20,30,40))
+
+        function getAver2(n1,n2,n3,n4){
+            let result = 0
+            let sum = 0
+            sum = n1+n2+n3+n4
+            result = sum/4
+            return result
+        }
+        // alert(getAver2(10,20,30,40))
+
+        function getAver3(arr){
+            return (arr[0]+arr[1]+arr[2]+arr[3])/arr.length
+        }
+        // alert(getAver3([10,20,30,40])) // 25
+        // getAver3([1,2,3,4,5])
+
+        function getAver4(arr,sosu){
+            let sum = 0
+            for(let i=0 ; i<arr.length ; i++){
+                sum = sum+arr[i]
+            }
+            return (sum/arr.length).toFixed(sosu)
+        }
+        alert(getAver4([1,2,3,4,5],4))
+    </script>
+
+</body>
+</html>

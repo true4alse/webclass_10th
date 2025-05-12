@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트</title>
+    <link rel="stylesheet" href="./css/study3.css">
+</head>
+<body>
+    <button id="btn1">인사 버튼</button>
+    <button id="btn2">밑 줄 추가</button>
+    <button id="btn3">밑 줄 제거</button>
+    <button id="btn4">글씨크기+ (현재 글씨 크기가 20픽셀입니다.)</button>
+    <button id="btn5">글씨크기- (현재 글씨 크기가 20픽셀입니다.)</button>
+    <div class="box">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint asperiores repellendus architecto sequi in blanditiis alias quos provident repellat voluptate, necessitatibus eligendi doloribus et quasi recusandae eveniet deserunt voluptatibus a?
+    </div>
+    <script>
+        let button1 = document.querySelector("#btn1")
+        button1.addEventListener("click",function(){
+            // 클릭했을 때 실행되는 소스코드
+            alert("안녕하세요")
+        })
+        // 버튼2를 클릭하면 box클래스에 under클래스가 추가되면 됨
+        let button2 = document.querySelector("#btn2")
+        button2.addEventListener("click",function(){
+            document.querySelector(".box").classList.add("under")
+        })
+        // 버튼3을 클릭하면 box클래스를 선택해서 under클래스를 삭제하면 됨
+        let button3 = document.querySelector("#btn3")
+        button3.addEventListener("click",function(){
+            document.querySelector(".box").classList.remove("under")
+        })
+        // 버튼4
+        let button4 = document.querySelector("#btn4")
+
+        let basic_font_size = 20
+        button4.addEventListener("click",function(){
+            // 글씨크기를 2픽셀 씩 증가
+            basic_font_size = basic_font_size + 2
+            if(basic_font_size>50){
+                // alert("50픽셀 이상으로 못키워요")
+                basic_font_size = 50
+                this.classList.add("red")
+                return
+            } 
+            document.querySelector(".box").style.fontSize = basic_font_size+"px"
+            // 버튼 안에 글씨 내용이 교체
+            this.innerHTML = `글씨크기+ (현재 글씨 크기가 ${basic_font_size}픽셀입니다.)`
+            button5.innerHTML = `글씨크기- (현재 글씨 크기가 ${basic_font_size}픽셀입니다.)`
+        })
+
+        let button5 = document.querySelector("#btn5")
+        button5.addEventListener("click",function(){
+            // 글씨크기를 2픽셀 씩 감소
+            basic_font_size = basic_font_size - 2
+            if(basic_font_size<20){
+                basic_font_size = 20
+                return
+            }
+            if(basic_font_size<=50){
+                button4.classList.remove("red")
+            }
+            document.querySelector(".box").style.fontSize = basic_font_size+"px"
+            button4.innerHTML = `글씨크기+ (현재 글씨 크기가 ${basic_font_size}픽셀입니다.)`
+            this.innerHTML = `글씨크기- (현재 글씨 크기가 ${basic_font_size}픽셀입니다.)`
+        })
+
+        let box = document.querySelector(".box")
+        box.addEventListener("mouseover",function(){
+            this.style.backgroundColor = "red"
+        })
+        box.addEventListener("mouseout",function(){
+            this.style.backgroundColor = "white"
+        })
+        
+        
+
+    </script>
+</body>
+</html>

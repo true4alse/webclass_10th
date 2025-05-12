@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>값의 형태로 정의하는 함수</title>
+</head>
+<body>
+    <h1>함수를 값의 형태로 정의하는 방법</h1>
+    <p>변수에 이름이 없는 익명함수를 저장하는 형태</p>
+    <p>정석표현으로 함수를 정의하면 해당 함수는 호이스팅이 되기 때문에 어디서든 접근할 수 있다.</p>
+    <script>
+        
+        let b = 0
+
+        a()
+        function a(){
+            alert("aa")
+        }
+
+        
+        let c = function(){
+            alert("cc")
+        }
+        c()
+        
+
+        // alert(d)
+        // let d = 5
+        
+    </script>
+</body>
+</html>

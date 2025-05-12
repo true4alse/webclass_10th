@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콜백함수</title>
+</head>
+<body>
+    <h1>콜백함수</h1>
+    <p>매개변수를 통해 함수가 전달 될 수 있다.</p>
+    <p>어떤 함수가 실행될 때 자동으로 뒤이어 실행되는 함수를 콜백함수라고 부른다.</p>
+
+    <script>
+        function a(call){
+            call()            
+        }
+        //a라는 함수가 실행되면 자동으로 call이라는 함수는 바로 실행이 된다.
+
+        a(function(){
+            alert("TTT")
+        })
+    </script>
+</body>
+</html>

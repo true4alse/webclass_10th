@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex1</title>
+</head>
+<body>
+    <script>
+        let student = {
+            name:"염수진",
+            age:100,
+            hobby:[
+                "라이딩",
+                "고양이 돌보기",
+                "강아지 돌보기"
+            ],
+            marry:false,
+            introduce:function(){
+                document.write(`<p>저의 이름은 ${this.name}이고 나이는 ${this.age}살 입니다.</p>`)
+            }
+        }
+        function showName(name){
+            document.write(`<p>이 학생의 이름은 ${name}입니다.</p>`)
+        }
+        function showAge(age){
+            document.write(`<p>이 학생의 나이는 ${age}살입니다.</p>`)
+        }
+        showName(student.name)
+        showAge(student.age)
+        student.introduce()
+        
+    </script>
+</body>
+</html>
