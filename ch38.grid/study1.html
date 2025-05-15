@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display:grid</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <h1>display : grid</h1>
+    <h2>grid컨테이너에 적용하는 속성</h2>
+    <hr>
+    <h3>display:grid</h3>
+    <p>display:grid가 설정된 태그는 그리드 컨테이너가 되고 그 안의 자식 태그들은 그리드 아이템이 된다.</p>
+
+    <h3>grid-template-columns</h3>
+    <p>그리드의 열의 개수와 크기를 정의한다.</p>
+    <p>1fr의 뜻은 1fraction, 비율 단위이다.</p>
+
+    <h3>grid-template-rows</h3>
+    <p>그리드의 행의 개수와 크기를 정의한다.</p>
+    <p>그리드 행의 높이는 기본적으로 포함한 컨텐츠 만큼의 크기이지만 그 크기를 정할 수도 있다.</p>
+
+    <h3>grid-auto-rows</h3>
+    <p>그리드의 행은 열의 개수에 따라 달라지므로 행 개수가 미지수일 때 전체 각 행의 높이를 설정할 때 사용하는 속성이다.</p>
+
+    <h3>gap</h3>
+    <p>그리드 셀 사이의 간격을 설정할 때 사용하는 속성이다.</p>
+    <p>띄어쓰기를 사용하여 위아래 셀 간격을 다르게 적용할 수도 있다. (gap:10px 20px)=> 위아래 간격은 10 좌우간격은 20으로 설정</p>
+
+    <h3>justify-content</h3>
+    <p>그리드 컨테이너 안에서 그리드 아이템그룹의 좌우 정렬을 조정할 수 있다.</p>
+    <p>start/center/end/stretch 4가지 값을 사용할 수 있다.</p>
+
+    <h3>justify-items</h3>
+    <p>각 그리드 아이템들의 좌우 정렬을 조정할 수 있다.</p>
+    <p>start/center/end/stretch 4가지 값을 사용할 수 있다.</p>
+
+    <h3>align-content</h3>
+    <p>그리드 컨테이너 안에서 그리드 아이템의 세로 정렬을 조정할 수 있다.</p>
+    <p>start/center/end/stretch 4가지 값을 사용할 수 있다.</p>
+
+    <h3>align-items</h3>
+    <p>각 그리드 아이템들의 세로 정렬을 조정할 수 있다.</p>
+    <p>start/center/end/stretch 4가지 값을 사용할 수 있다.</p>
+
+    <hr>
+
+    <h2>그리드 아이템들에게 사용하는 속성</h2>
+
+    <h3>grid-colum / grid-row</h3>
+    <p>각 그리드 아이템들의 그리드 라인을 어디부터 어디까지 차지할지 설정할 때 사용하는 속성</p>
+    <p>그리드 라인은 1번부터 카운트한다.</p>
+    <p>grid-column : 1/3 => 그리드 열라인을 1번부터 3번까지 차지 -> 2칸 차지</p>
+
+    <h3>z-index</h3>
+    <p>값이 클 수록 앞으로 배치된다.</p>
+
+    <h2>그리드에 사용하는 함수</h2>
+    <p>repeat()함수 -> repeat(2,200px) -> 200px 200px</p>
+    <p>minmax()함수 -> minmax(100px,300px) -> 최소값은 100픽셀이고 최대값은 300픽셀</p>
+
+    <div class="box">
+        <section>section1</section>
+        <section>section2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iste facere quod fugiat veniam placeat sequi enim reprehenderit odit sapiente? Consectetur, nobis illum eaque dolore est nostrum magnam sequi neque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iste facere quod fugiat veniam placeat sequi enim reprehenderit odit sapiente? Consectetur, nobis illum eaque dolore est nostrum magnam sequi neque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iste facere quod fugiat veniam placeat sequi enim reprehenderit odit sapiente? Consectetur, nobis illum eaque dolore est nostrum magnam sequi neque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iste facere quod fugiat veniam placeat sequi enim reprehenderit odit sapiente? Consectetur, nobis illum eaque dolore est nostrum magnam sequi neque?</section>
+        <section>section3</section>
+        <section>section4</section>
+        <section>section5</section>
+        <section>section6</section>
+        <section>section7</section>
+        <section>section8</section>
+        <section>section9</section>
+        <section>section10</section>
+        <section>section11</section>
+        <section>section12</section>
+        <section>section13</section>
+        <section>section14</section>
+        <section>section15</section>
+        <section>section16</section>
+        <section>section17</section>
+        <section>section18</section>
+        <section>section19</section>
+        <section>section20</section>
+    </div>
+</body>
+</html>

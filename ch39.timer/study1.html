@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer 함수</title>
+</head>
+<body>
+    <h1>setTimeout(동작,시간)</h1>
+    <p>일정시간 뒤에 특정한 동작을 한번 실행하도록 예약하는 함수</p>
+    <script>
+        let timer1 = setTimeout(function(){
+            alert("test")
+        },3000)
+    </script>
+    <h1>clearTimeout()</h1>
+    <p>setTimeout()함수가 실행되고 남긴 스케줄을 취소하는 함수</p>
+    <button id="btnC">알림창 취소</button>
+    <script>
+        document.querySelector("#btnC").addEventListener("click",function(){
+            clearTimeout(timer1)
+        })
+    </script>
+    <h1>setInterval(동작,시간)</h1>
+    <p>일정시간마다 특정한 동작을 반복하는 함수</p>
+    <p id="timeview">0초 지났습니다.</p>
+    <script>
+        let sec = 0
+        let timer2 = setInterval(function(){
+            sec++
+            document.querySelector("#timeview").innerHTML = `${sec}초 지났습니다.`
+        },1000)
+    </script>
+    <h1>clearInterval()</h1>
+    <p>setInterval함수가 만든 반복 스케줄을 취소할 때 사용하는 함수</p>
+    <script>
+        clearInterval(timer2)
+    </script>
+</body>
+</html>

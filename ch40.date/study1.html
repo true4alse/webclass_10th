@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date객체</title>
+</head>
+<body>
+    <h1>date객체</h1>
+    <p>자바스크립트에 기본적으로 설정되어있는 객체로 날짜와 시간을 불러올 수 있다.</p>
+    <div class="dateAll">
+        오늘 날짜는 2025년 5월 15일 현재 시간은 10시 0분 0초입니다.
+    </div>
+    <script>
+        let dateAll = document.querySelector(".dateAll")
+        
+        let today = new Date()
+        let hour = today.getHours()
+        let miniute = today.getMinutes()
+        let second = today.getSeconds()
+        let year = today.getFullYear()
+        let month = today.getMonth()
+        let date = today.getDate()
+        let day = today.getDay()
+
+        let monthArray = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ]
+
+        let dayArray = ["일","월","화","수","목","금","토"]
+
+        dateAll.innerHTML = `오늘 날짜는 ${year}년 ${monthArray[month]}월 ${date}일 현재 시간은 ${hour}시 ${miniute}분 ${second}초 ${dayArray[day]}요일입니다.`
+
+
+
+        // dateAll.innerHTML = date.getHours()
+        // dateAll.innerHTML = date.getMinutes()
+        // dateAll.innerHTML = date.getSeconds()
+        // dateAll.innerHTML = date.getMonth() // 0,1,2,3,4,... 번째 개월
+        // dateAll.innerHTML = date.getFullYear()
+        // dateAll.innerHTML = date.getDate()
+        // dateAll.innerHTML = date.getDay() // 일요일부터 0,1,2,3,4,... 번째 요일
+    </script>
+</body>
+</html>

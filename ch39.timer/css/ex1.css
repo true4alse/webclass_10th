@@ -1,0 +1,19 @@
+*{margin: 0;padding: 0;}
+.station{
+    width:1000px;
+    height:600px;
+    overflow: hidden;
+}
+.train{
+    width:400%;
+    height:100%;
+    display: flex;
+    transition: all 1s ease 0s;
+}
+.train>div{
+    flex:1;
+}
+.train>div:nth-of-type(1){background-color: olive;}
+.train>div:nth-of-type(2){background-color: orange;}
+.train>div:nth-of-type(3){background-color: orchid;}
+.train>div:nth-of-type(4){background-color: orangered;}

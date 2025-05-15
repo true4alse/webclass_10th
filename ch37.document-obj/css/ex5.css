@@ -1,0 +1,42 @@
+*{
+    margin:0;padding:0;
+}
+ul{
+    list-style: none;
+}
+.station{
+    width:100%;
+    height:700px;
+    border:1px solid red;
+    margin:0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.train{
+    /* width:500%; */
+    height:100%;
+    display: flex;
+    transition:all 1s ease 0s;
+}
+.train>li{
+    flex:1;
+    border:1px solid blue;
+    font-size: 8rem;
+}
+.control{
+    border:1px solid red;
+    position: absolute;
+    left:0;
+    top:50%;
+    width:100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+.control span{
+    border:1px solid black;
+    padding: 10px;
+    cursor: pointer;
+}

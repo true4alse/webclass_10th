@@ -1,0 +1,26 @@
+*{margin:0;padding:0;}
+ul{list-style: none;}
+.station{
+    width:1000px;
+    height:700px;
+    margin:0 auto;
+    border:1px solid blue;
+}
+.train{
+    position: relative;
+    width:100%;
+    height:100%;
+}
+.train>li{
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    font-size:7rem;
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.train>li.on{
+    opacity: 1;
+}
