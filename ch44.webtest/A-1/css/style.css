@@ -99,8 +99,16 @@ header {
     background-color: #000;
     color:#fff;
 }
+.tabDesc>ul{
+    display: none;
+}
+.notice.on{
+    display: block;
+}
+.gallery.on{
+    display: flex;
+}
 .notice li{
-    
     display: flex;
     justify-content: space-between;
 }
