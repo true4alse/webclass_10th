@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+/* reset */
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    color:inherit;
+    text-decoration: inherit;
+}
+ul,ol{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+
+html{
+    background-color: #fff;
+    color:#333;
+}
+.wrap{
+    width:1200px;
+    margin:0 auto;
+}
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1000;
+    background-color: #e818f4;
+}
+.logo{
+    align-self: center;
+}
+.gnb{
+    display: flex;
+    margin-top: 25px;;
+    margin-right: 25px;
+    height: 50px;
+    overflow: hidden;
+    transition:all 0.5s ease 0s;
+}
+.gnb:hover{
+    height:230px;
+}
+.gnb a{
+    display: inline-flex;
+    width:150px;
+    height:50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.gnb ul a{
+    height:40px;
+}
+.gnb li:hover > a {
+    background-color: #000;
+    color:#fff;
+}
+.station{
+    height:300px;
+    width:1200px;
+    overflow: hidden;
+}
+.train{
+    height:300%;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s ease 0s;
+}
+.train>li{
+    flex:1;
+    line-height: 0;
+}
+.contents{
+    height:200px;
+    display: flex;
+}
+.contents>section{
+    flex:1;
+    
+}
+.tabs{
+    display: flex;
+    margin-bottom: 10px;
+}
+.tabs a{
+    width:100px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabs a.on{
+    background-color: #000;
+    color:#fff;
+}
+.notice li{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.gallery{
+    display: flex;
+    gap:20px;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/banner.jpg") no-repeat 50% 50% / cover;
+}
+.banner a{
+    background-color: #e818f4;
+    padding:4px 20px;
+    color:#fff;
+}
+.direct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/direct.jpg") no-repeat 50% 50% / cover;
+}
+.direct a{
+    background-color: #e818f4;
+    padding:4px 20px;
+    color:#fff;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    background-color: #000;
+    color:#fff;
+}
+.sns{
+    display: flex;
+}
+.popup{
+    position: fixed;
+    left:300px;
+    top:300px;
+    border:1px solid #000;
+    width:300px;
+    background-color: #fff;
+    padding:10px;
+    display: none;
+}
+.popup.on{
+    display: block;
+}
+.popctl{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn_close{
+    border:1px solid #000;
+    padding:10px;
+    cursor: pointer;
+}

@@ -1,0 +1,9 @@
+.box{
+    height:5000px;
+}
+#scr{
+    position: fixed;
+    right:0;
+    top:0;
+    background-color: #fff;
+}

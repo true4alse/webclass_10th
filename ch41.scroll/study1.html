@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크롤 이벤트</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <p id="scr">현재 위에서 0픽셀만큼 떨어져 있음.</p>
+    <div class="box">
+        <h1>스크롤 이벤트</h1>
+        <p>윈도우의 스크롤바를 움직이게하는 행위</p>
+    </div>
+    <script>
+        let distance = 0
+        let scrTag = document.querySelector("#scr")
+
+        window.addEventListener("scroll",function(){
+            distance = window.scrollY
+            console.log(distance)
+            scrTag.innerHTML = `현재 위에서 ${distance}픽셀만큼 떨어져 있음.`
+        })
+    </script>
+</body>
+</html>

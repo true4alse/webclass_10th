@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded",function(){
     let timeTag = document.querySelector(".time")
     let monthArray = ["1","2","3","4","5","6","7","8","9","10","11","12"]
     let dayArray = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    let clock = document.querySelector(".clock")
+    
     // 현재시간을 불러와서 저장
     function a(){
         let today = new Date()
@@ -17,6 +19,16 @@ document.addEventListener("DOMContentLoaded",function(){
         let second = today.getSeconds()<10?"0"+today.getSeconds():today.getSeconds()
         dayTag.innerHTML = `${monthArray[month]}/${date} ${dayArray[day]}`
         timeTag.innerHTML = `${hour}:${minute}:${second}`
+
+        if(getDayOrNight()=="낮"){
+            clock.classList.remove("day")
+            clock.classList.remove("night")
+            clock.classList.add("day")
+        }else{
+            clock.classList.remove("day")
+            clock.classList.remove("night")
+            clock.classList.add("night")
+        }
     }
     a()
     let clockTimer = setInterval(function(){
@@ -29,6 +41,23 @@ document.addEventListener("DOMContentLoaded",function(){
 
     function getDayOrNight(){
         let now = new Date()
+        let hours = now.getHours() // 0~23 리턴
+        let minutes = now.getMinutes() // 0~59 리턴
+        if((hours>9 && hours<18) || (hours==9 && minutes>=40) || (hours==18 && minutes<5)){
+            return "낮"
+        }else{
+            return "밤"
+        }
+    }
+    
+    if(getDayOrNight()=="낮"){
+        clock.classList.remove("day")
+        clock.classList.remove("night")
+        clock.classList.add("day")
+    }else{
+        clock.classList.remove("day")
+        clock.classList.remove("night")
+        clock.classList.add("night")
     }
     
 

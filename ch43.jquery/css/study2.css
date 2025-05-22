@@ -1,0 +1,7 @@
+.box{
+    border:1px solid #000;
+}
+.box.on{
+    background-color: red;
+    color:#fff;
+}

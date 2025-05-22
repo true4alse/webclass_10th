@@ -21,6 +21,7 @@
 #time{
     position: relative;
     z-index: 1;
+    width:30%;
 }
 .day{
     font-size: 70px;

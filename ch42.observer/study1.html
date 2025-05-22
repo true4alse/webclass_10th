@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>옵져버</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    
+    <div>
+        <h1 class="ltr">title</h1>
+        <p class="rtl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure omnis nam ducimus voluptatibus quidem aliquam eos aliquid quas quis libero, placeat sed! Quis doloribus suscipit totam ratione corporis sed.</p>
+        <h1 class="ltr">title</h1>
+        <p class="rtl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure omnis nam ducimus voluptatibus quidem aliquam eos aliquid quas quis libero, placeat sed! Quis doloribus suscipit totam ratione corporis sed.</p>
+        <h1 class="ltr">title</h1>
+        <p class="rtl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure omnis nam ducimus voluptatibus quidem aliquam eos aliquid quas quis libero, placeat sed! Quis doloribus suscipit totam ratione corporis sed.</p>
+        <h1 class="rtl">title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure omnis nam ducimus voluptatibus quidem aliquam eos aliquid quas quis libero, placeat sed! Quis doloribus suscipit totam ratione corporis sed.</p>
+        <div class="ltr">
+            <h1>title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure omnis nam ducimus voluptatibus quidem aliquam eos aliquid quas quis libero, placeat sed! Quis doloribus suscipit totam ratione corporis sed.</p>
+            <h1>title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure omnis nam ducimus voluptatibus quidem aliquam eos aliquid quas quis libero, placeat sed! Quis doloribus suscipit totam ratione corporis sed.</p>
+            <h1>title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure omnis nam ducimus voluptatibus quidem aliquam eos aliquid quas quis libero, placeat sed! Quis doloribus suscipit totam ratione corporis sed.</p>
+        </div>
+        
+        <h1>title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure omnis nam ducimus voluptatibus quidem aliquam eos aliquid quas quis libero, placeat sed! Quis doloribus suscipit totam ratione corporis sed.</p>
+        <h1>title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure omnis nam ducimus voluptatibus quidem aliquam eos aliquid quas quis libero, placeat sed! Quis doloribus suscipit totam ratione corporis sed.</p>
+        <h1>title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure omnis nam ducimus voluptatibus quidem aliquam eos aliquid quas quis libero, placeat sed! Quis doloribus suscipit totam ratione corporis sed.</p>
+        <h1>title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure omnis nam ducimus voluptatibus quidem aliquam eos aliquid quas quis libero, placeat sed! Quis doloribus suscipit totam ratione corporis sed.</p>
+        <h1>title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure omnis nam ducimus voluptatibus quidem aliquam eos aliquid quas quis libero, placeat sed! Quis doloribus suscipit totam ratione corporis sed.</p><h1>title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure omnis nam ducimus voluptatibus quidem aliquam eos aliquid quas quis libero, placeat sed! Quis doloribus suscipit totam ratione corporis sed.</p>
+    </div>
+    <script>
+        // IntersectionObserver 생성: 요소가 화면에 들어오고 나가는 것을 감지
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            // 요소가 화면에 보이면 show 클래스 추가
+            entry.target.classList.add('on');
+            } else {
+            // 요소가 화면에서 벗어나면 show 클래스 제거
+            entry.target.classList.remove('on');
+            }
+        });
+        }, {
+        threshold: 0.1 // 요소가 10% 이상 보일 때 트리거
+        });
+
+        // 모든 section 요소에 observer 적용
+        document.querySelectorAll('.ltr,.rtl').forEach(section => {
+            observer.observe(section);
+        });
+
+    </script>
+</body>
+</html>

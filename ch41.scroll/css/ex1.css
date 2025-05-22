@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.wrap>section{
+    height:1000px;
+}
+.wrap>section:nth-of-type(1){background-color: olive;}
+.wrap>section:nth-of-type(2){background-color: rebeccapurple;}
+.wrap>section:nth-of-type(3){background-color: orchid;}
+.wrap>section:nth-of-type(4){background-color: lightcoral;}
+.wrap>section:nth-of-type(5){background-color: goldenrod;}
+.progressFrame{
+    position: fixed;
+    left:2rem;
+    bottom:2rem;
+    width:400px;
+}
+.bar{
+    background-color: #fff;
+    width:100%;
+    height:10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #ddd;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.prog{
+    width:0%;
+    height:100%;
+    background-color: aqua;
+}
+#btnTop{
+    position: fixed;
+    right:2rem;
+    bottom:2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    padding:10px;
+    cursor: pointer;
+    transform: translateX(6rem);
+    transition: all 1s ease 0s;
+}
+#btnTop.on{
+    transform: translateX(0rem);
+}
