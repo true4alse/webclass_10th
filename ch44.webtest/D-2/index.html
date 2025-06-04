@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>서울구석구석</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <script src="./js/index.js"></script> -->
+    <script src="./js/jquery-1.12.3.js"></script>
+    <script src="./js/index2.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -66,14 +70,14 @@
                         전통과 현대가 어우러진 특별한 여행 코스와 계절별 추천 장소를 만나보세요.
                         서울의 또 다른 모습을 경험하고, 소중한 추억을 만들어 보세요!
                     </p>
-                    <a href="#"><img src="./img/arrow.png" alt="배너 바로가기"></a>
+                    <a href="#" class="link"><img src="./img/arrow.png" alt="배너 바로가기"></a>
                 </div>
             </div>
             <div class="contents">
                 <section>
                     <h3>공지사항</h3>
                     <ul class="notice">
-                        <li>
+                        <li id="btn_popup">
                             <a href="#">2024 서울 여행 추천 코스 업데이트 안내</a>
                             <span>2024년 3월 1일</span>
                         </li>
@@ -117,6 +121,32 @@
             </div>
         </main>
     </div>
-    <footer></footer>
+    <footer>
+        <h1 class="flogo">
+            <a href="#">
+                <img src="./img/flogo.jpg" alt="서울구석구석하단로고">
+            </a>
+        </h1>
+        <div class="copy">
+            COPYRIGHTⓒ by BARUNWEBDESIGN. ALL RIGHTS RESERVED.
+        </div>
+        <select>
+            <option value="서울관광재단">서울관광재단</option>
+            <option value="서울문화포털">서울문화포털</option>
+            <option value="서울시 공식 홈페이지">서울시 공식 홈페이지</option>
+        </select>
+    </footer>
+    <div class="modal"></div>
+    <div class="popup">
+        <h3>서울구석구석에 오신 것을 환영합니다!</h3>
+        <p>안녕하세요!
+            서울구석구석을 방문해 주셔서 감사합니다.
+            서울의 매력적인 명소와 숨은 여행지를 소개해 드리는 다양한 콘텐츠가 준비되어 있습니다.
+            최신 여행 코스와 계절별 이벤트 정보는 아래 링크를 통해 확인해 주세요.
+            새로운 서울의 모습을 발견하고 특별한 경험을 만들어 보세요!</p>
+        <div class="popupctl">
+            <div id="btn_close">x닫기</div>
+        </div>
+    </div>
 </body>
 </html>

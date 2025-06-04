@@ -1,0 +1,164 @@
+*{
+    margin:0;padding: 0;
+}
+a{color: inherit; text-decoration: inherit;}
+ul{list-style: none;}
+img{max-width: 100%;}
+
+html{
+    background-color: #fff;
+    color:#333;
+}
+.wrap{
+    display: flex;
+    height:calc(100vh - 120px);
+    
+}
+header{
+    width:200px;
+}
+.logo{
+    
+    text-align: center;
+    margin-bottom: 20px;
+}
+.gnb{
+    width:180px;
+    margin: 0 auto;
+}
+.gnb a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:50px;
+}
+.gnb ul a{
+    height:30px;
+    background-color: orange;
+    
+}
+.gnb>li{
+    position: relative;
+}
+.gnb ul{
+    position: absolute;
+    left:180px;
+    top:0;
+    width:180px;
+    opacity: 0;
+    pointer-events: none;
+    transition:all 0.8s ease 0s;
+    padding-left: 10px;
+}
+.gnb>li:hover ul{
+    opacity: 1;
+    pointer-events: auto;
+}
+.gnb li:hover>a{
+    background-color: #000;
+    color:#fff;
+}
+
+
+.contents{
+    
+    width:400px;
+}
+.contents>section{
+    margin-bottom: 20px;
+}
+.banner{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+.imgframe{
+    width:150px;
+    align-self: flex-start;
+}
+.txtframe{
+    width:230px;
+    /* height:120px;
+    overflow: auto; */
+}
+.btn_go{
+    width:20px;
+}
+.notice li{
+    display: flex;
+    justify-content: space-between;
+}
+.gallery{
+    display: flex;
+    gap:10px;
+}
+.direct{
+    display: flex;
+    gap:10px;
+}
+
+
+.station{
+    width:calc(100% - 600px);
+    overflow: hidden;
+}
+.train{
+    width:300%;
+    height:100%;
+    display: flex;
+    transition:all 1s ease 0s;
+}
+.train li{
+    flex:1;
+}
+footer{
+    height:120px;
+    background-color: #000;
+    color:#fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fmenu{
+    display: flex;
+    gap:10px;
+}
+.modal{
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color: #000;
+    opacity: 0.7;
+    z-index: 1000;
+    display: none;
+}
+.modal.on{
+    display: block;
+}
+.popup{
+    position: fixed;
+    left:300px;
+    top:300px;
+    width:300px;
+    padding:30px;
+    background-color: #fff;
+    z-index: 2000;
+    display: none;
+}
+.popup.on{
+    display: block;
+}
+.popup p{
+    margin:20px 0;
+}
+.popupctl{
+    display: flex;
+    justify-content: flex-end;
+}
+#btn_close{
+    border:1px solid #000;
+    cursor: pointer;
+    padding:10px;
+}
