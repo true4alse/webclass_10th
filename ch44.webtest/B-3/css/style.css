@@ -1,0 +1,138 @@
+*{margin:0;padding:0;}
+ul{list-style: none;}
+a{text-decoration: inherit;color:inherit;}
+img{max-width: 100%;}
+html{
+    background-color: #fff;
+    color:#333;
+}
+
+header{
+    height:100px;
+    background-color: orange;
+    position: relative;
+    z-index: 1000;
+}
+
+.innerHeader{
+    width:1200px;
+    height:100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.gnb{
+    display: flex;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+.gnb a{
+    display: flex;
+    width:180px;
+    height:50px;
+    justify-content: center;
+    align-items: center;
+}
+.gnb ul a{
+    height:30px;
+}
+.gnb ul{
+    background-color: aquamarine;
+}
+.gnb>li{
+}
+.gnb>li:hover ul{
+    opacity: 1;
+    pointer-events: auto;
+}
+.gnb ul{
+    opacity: 0;
+    pointer-events: none;
+    transition: all .6s ease 0s;;
+}
+.gnb li:hover>a{
+    background-color: #000;
+    color:#fff;
+}
+.station{
+    width:1200px;
+    height:300px;
+    margin:0 auto;
+    overflow: hidden;
+}
+.train{
+    width:100%;
+    height:300%;
+    display: flex;
+    flex-direction: column;
+    transition: all .6s ease 0s;
+    line-height: 0;
+}
+.contents{
+    width:1200px;
+    height:200px;
+    display: flex;;
+    margin:0 auto;
+}
+.contents>section{
+    flex:1;
+}
+.notice li{
+    display: flex;
+    justify-content: space-between;
+}
+.gallery{
+    display: flex;
+    gap:10px;
+}
+.banner{
+    background: url("../img/direct.jpg") no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner a{
+    background-color: orange;
+    padding:10px 20px;
+}
+footer{
+    height:100px;
+    background-color: #000;;
+    color:#fff;
+}
+.innerFooter{
+    width:1200px;
+    height:100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sns{
+    display: flex;
+}
+.popup{
+    position: fixed;
+    width:300px;
+    left:300px;
+    top:300px;
+    padding:30px;
+    background-color: #fff;
+    border:1px solid #000;;
+    display: none;
+}
+.popup.on{
+    display: block;
+}
+.popup p{
+    margin:10px 0;
+}
+.popupctl{
+    display: flex;
+    justify-content: flex-end;
+}
+#btn_close{
+    padding:10px;
+    border:1px solid #000;
+    cursor: pointer;
+}
