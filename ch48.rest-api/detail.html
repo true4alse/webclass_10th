@@ -25,21 +25,32 @@
             <p>보호소 위치 : 광주시 북구 따뜻한보호소</p>
             <p>건강 상태 : 기초 접종과 중성화 수술을 완료했으며, 최근 건강검진에서 특이사항 없이 건강하다는 소견을 받았어요.</p>
             <p>입양여부 : 입양가능</p>
-
-            <!-- aCate: "고양이",
-    aidx: 2,
-    aName: "보리",
-    aAge: "5살",
-    aGender: "남",
-    aSur: true,
-    aChar: "보리는 사람을 좋아하지만 처음에는 조금 수줍어해요. 시간이 지나면 애교가 많아져서 옆에 꼭 붙어 있는 걸 좋아한답니다.",
-    aThumb: "daria-averina-_867Jy8LCkI-unsplash.jpg",
-    aWeight: 5.2,
-    aKind: "먼치킨",
-    aLocation: "광주시 북구 따뜻한보호소",
-    aStateHealth: "기초 접종과 중성화 수술을 완료했으며, 최근 건강검진에서 특이사항 없이 건강하다는 소견을 받았어요.",
-    aGoState: "입양 가능" -->
         </div>
     </div>
+    <script>
+        function getQueryParam(paramName, defaultValue = 0) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(paramName) ?? defaultValue;
+        }
+
+        let animal_id = getQueryParam("aid")
+        const detailFrame = document.querySelector(".detailFrame")
+        detailFrame.innerHTML = `<div class="imgFrame">
+            <img src="./img/${animalArray[animal_id].aThumb}" alt="${animalArray[animal_id].aName}">
+        </div>
+        <div class="txtFrame">
+            <p>종류 : ${animalArray[animal_id].aCate}</p>
+            <p>품종 : ${animalArray[animal_id].aKind}</p>
+            <p>이름 : ${animalArray[animal_id].aName}</p>
+            <p>나이 : ${animalArray[animal_id].aAge}</p>
+            <p>성별 : ${animalArray[animal_id].aGender} 아</p>
+            <p>중성화 : ${animalArray[animal_id].aSur?"O":"X"}</p>
+            <p>성격 : ${animalArray[animal_id].aChar}</p>
+            <p>체중 : ${animalArray[animal_id].aWeight}kg</p>
+            <p>보호소 위치 : ${animalArray[animal_id].aLocation}</p>
+            <p>건강 상태 : ${animalArray[animal_id].aStateHealth}</p>
+            <p>입양여부 : ${animalArray[animal_id].aGoState}</p>
+        </div>`
+    </script>
 </body>
 </html>
