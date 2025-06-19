@@ -1,0 +1,17 @@
+*{margin:0;padding:0;}
+body{padding-top: 2000px;}
+#Layer_1 path{
+    fill:transparent;
+    stroke: black;
+    stroke-width: 3;
+    /* transition: all 1s ease 0s; */
+    /* transition:
+    stroke-dasharray 1s ease 0s,
+    fill 1s ease 0s */
+
+
+}
+#Layer_1.on path{
+    stroke-dashoffset: 0!important;
+    fill:red;
+}
